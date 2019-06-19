@@ -4,17 +4,10 @@
 #
 Name     : mvn-spice-zapper
 Version  : 1.2
-Release  : 1
+Release  : 2
 URL      : https://repo1.maven.org/maven2/org/sonatype/spice/zapper/spice-zapper/1.2/spice-zapper-1.2.jar
 Source0  : https://repo1.maven.org/maven2/org/sonatype/spice/zapper/spice-zapper/1.2/spice-zapper-1.2.jar
-Source1  : https://repo1.maven.org/maven2/org/sonatype/spice/spice-parent/10/spice-parent-10.pom
-Source2  : https://repo1.maven.org/maven2/org/sonatype/spice/spice-parent/12/spice-parent-12.pom
-Source3  : https://repo1.maven.org/maven2/org/sonatype/spice/spice-parent/15/spice-parent-15.pom
-Source4  : https://repo1.maven.org/maven2/org/sonatype/spice/spice-parent/16/spice-parent-16.pom
-Source5  : https://repo1.maven.org/maven2/org/sonatype/spice/spice-parent/17/spice-parent-17.pom
-Source6  : https://repo1.maven.org/maven2/org/sonatype/spice/spice-parent/18/spice-parent-18.pom
-Source7  : https://repo1.maven.org/maven2/org/sonatype/spice/spice-parent/20/spice-parent-20.pom
-Source8  : https://repo1.maven.org/maven2/org/sonatype/spice/zapper/spice-zapper/1.2/spice-zapper-1.2.pom
+Source1  : https://repo1.maven.org/maven2/org/sonatype/spice/zapper/spice-zapper/1.2/spice-zapper-1.2.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -42,39 +35,11 @@ cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/zapp
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/zapper/spice-zapper/1.2
 cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/zapper/spice-zapper/1.2
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/10
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/10
-
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/12
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/12
-
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/15
-cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/15
-
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/16
-cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/16
-
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/17
-cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/17
-
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/18
-cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/18
-
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/20
-cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/20
-
 
 %files
 %defattr(-,root,root,-)
 
 %files data
 %defattr(-,root,root,-)
-/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/10/spice-parent-12.pom
-/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/12/spice-parent-15.pom
-/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/15/spice-parent-16.pom
-/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/16/spice-parent-17.pom
-/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/17/spice-parent-18.pom
-/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/18/spice-parent-20.pom
-/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/20/spice-zapper-1.2.pom
-/usr/share/java/.m2/repository/org/sonatype/spice/zapper/spice-zapper/1.2/spice-parent-10.pom
 /usr/share/java/.m2/repository/org/sonatype/spice/zapper/spice-zapper/1.2/spice-zapper-1.2.jar
+/usr/share/java/.m2/repository/org/sonatype/spice/zapper/spice-zapper/1.2/spice-zapper-1.2.pom
